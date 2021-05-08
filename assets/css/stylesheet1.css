@@ -1,4 +1,4 @@
-*{
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
@@ -11,7 +11,6 @@
 }
 
 body {
-    display: grid;
     min-height: 100vh;
     width: 100%;
     max-width: 1500px;
@@ -19,33 +18,34 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
 
-/*Style Header*/
 header {
     padding: 15px 35px;
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-image: url("../images/sunset-palms.jpg");
-
     background-size: cover;
     background-attachment: fixed;
-    background-position: 70%;
+    background-position: 100%;
 }
+
 
 header h1 {
     font-size: 65 px;
     color: var(--secondary-color);
 }
+
 header a {
     font-weight: bold;
     text-decoration: none;
     color: var(--secondary-color);
     margin-right: 10x;
 }
+
 header nav {
     margin: 7px 0;
 }
+
 header nav ul {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -58,18 +58,21 @@ ul {
     padding-top: 15px;
     margin: 0;
 }
-
+  
 li {
     display: inline-flex;
     margin-right: 15px;
 }
+
+
+
 
 header nav ul li a {
     display: inline-flex;
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 25px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);    
+    text-shadow: 0 0 10px rgba(177, 170, 170, 0.5);
     cursor: pointer;
 }
 
@@ -83,9 +86,9 @@ a:active {
     text-decoration: underline;
     background-color: transparent;
 }
-/*End Style Header*/
 
 .hero {
+    
     height: 375px;
     display: flex;
     background-image: url("../images/sunset-palms.jpg");
@@ -97,8 +100,8 @@ a:active {
     background-attachment: fixed;
     background-position: 70%;
     padding: 10px;
-    margin-bottom: 20px;
 }
+
 
 .circular--square {
     border-top-left-radius: 50% 50%;
@@ -110,9 +113,7 @@ a:active {
 }
 
 .container {
-    height: 230px;
-    width: 1300px;
-    display: flexbox;
+    display: grid;
     gap: 5px;
 }
 
@@ -121,60 +122,37 @@ a:active {
 
 }
 
-
-.container > div {
-    background-color: var(--primary-color);
-    text-align: left;
-    padding: 10px;
-    font-size: 20px;
+.container2 {
+    display: grid;
+    grid-template-columns:  300px  1000px  100px ;
+    grid-template-rows: 400px 400px;
+    margin: 10px;
 }
 
-#about-me {
-height: 200px;
- width: 220px;
- border-right: #ff9400;
- border
+.container2 > div {
+    padding: 5px;
 }
-
-#bio {
-    height: 200px;
-    width: 1100px;
-}
-
-#work {
-    height: 500px;
-     width: 220px;
-    }
-
-
 
 p{
     color: var(--secondary-color);
+    grid-column;  2 /span 1; 
 }
 
-.feature {
-    border: 5px; 
-    border-color: var(--secondary-color);
+.container3 {
+    display: grid;
+    grid-template-columns:  300px  500px  500 100px ;
+    grid-template-rows: 400px 400px;
+    margin: 10px;
+
 }
 
-.med-pic {
-    border: 5px;
-    border-color: var(--secondary-color);
-}
+.container3 > div {
+    padding: 5px;
+} 
 
-.med-pic {
-    border-color: var(--secondary-color);
-}
-
-#about-me{
-    height: 200px;
-    width: 220px;
-}
-
-
-.leftbar{
-border: 5px; 
-border-color: var(--secondary-color);
+.pic{
+border: 5px;
+border-color: var(--primary-color);
 }
 
 h2 {
@@ -182,6 +160,100 @@ h2 {
     font-size: larger;
     color: var(--secondary-color);
 }
+
+
+#one .info {
+    color: var(--secondary-color);
+    margin-right: 10px;
+    border: 3px;
+    border-right: var(--secondary-color);
+    grid-column:  1 /span 2; 
+} 
+
+#two .pic {
+    color: var(--secondary-color);
+    margin-right: 10px;
+    border: 3px;
+    border-right: var(--secondary-color);
+    grid-column:  3 /span 2; 
+}  
+
+#three .info {
+    color: var(--secondary-color);
+    margin-right: 10px;
+    border: 3px;
+    border-right: var(--secondary-color);
+    grid-column:  2 /span 3; 
+} 
+
+#four .pic {
+    color: var(--secondary-color);
+    margin-right: 10px;
+    border: 3px;
+    border-right: var(--secondary-color);
+    grid-column:  3 /span 2; 
+}  
+
+#five .info {
+    color: var(--secondary-color);
+    margin-right: 10px;
+    border: 3px;
+    border-right: var(--secondary-color);
+    grid-column:  1 /span 2; 
+} 
+
+#six .pic {
+    color: var(--secondary-color);
+    margin-right: 10px;
+    border: 3px;
+    border-right: var(--secondary-color);
+    grid-column:  3 /span 2; 
+}  
+
+#seven .pic {
+    color: var(--secondary-color);
+    margin-right: 10px;
+    border: 3px;
+    border-right: var(--secondary-color);
+    grid-column:  3 /span 2; 
+}
+
+#eight .info {
+    color: var(--secondary-color);
+    margin-right: 10px;
+    border: 3px;
+    border-right: var(--secondary-color);
+    grid-column:  1 /span 2; 
+}
+
+#nine .pic {
+    color: var(--secondary-color);
+    margin-right: 10px;
+    border: 3px;
+    border-right: var(--secondary-color);
+    grid-column:  3 /span 2; 
+}
+
+#nine .pic {
+    color: var(--secondary-color);
+    margin-right: 10px;
+    border: 3px;
+    border-right: var(--secondary-color);
+    grid-column:  3 /span 2; 
+}
+
+
+
+
+#eleven .info {
+    color: var(--secondary-color);
+    margin-right: 10px;
+    border: 3px;
+    border-right: var(--secondary-color);
+    grid-column:  1 /span 2; 
+} 
+
+
 
 #surf{
     width: 1100px;
@@ -197,6 +269,8 @@ h2 {
     backface-visibility: hidden;
 }
 
+
+
 .w3-card {
     transition: .5s ease;
     opacity: 0;
@@ -206,26 +280,53 @@ h2 {
     transform: translate(0%, 0%);
     -ms-transform: translate(0%, 0%);
     text-align: center;
+   
+    
     text-align: center;
+    
 }
 
-.lg-frame:hover .image {
+#waves:hover .image {
     opacity: 1;
 }
 
-.lg-frame:hover .w3-card {
+#waves:hover .w3-card {
     opacity: 1;
 }
 
-.med-pic:hover .image {
+
+#led:hover .image {
     opacity: 1;
 }
 
-.med-pic:hover .w3-card {
+#led:hover .w3-card {
     opacity: 1;
 }
 
-/*FOOTER STYLING*/
+#calculator:hover .image {
+    opacity: 1;
+}
+
+#pastel-puzzle:hover .image {
+    opacity: 1;
+}
+
+#run-buddy:hover .image {
+    opacity: 1;
+}
+
+#led:hover .w3-card {
+    opacity: 1;
+}
+
+#calculator:hover .w3-card {
+    opacity: 1;
+}
+
+#pastel-puzzle:hover:hover .w3-card {
+    opacity: 1;
+}
+
 address ul li a {
     display: inline-flex;
     padding: 10px 15px;
@@ -252,6 +353,4 @@ li {
     display: inline-flex;
     margin-right: 15px;
 }
-
-
 
