@@ -123,7 +123,15 @@ h2{
     color: var(--secondary-color);
 }
 
+#about-me{
+    display: flex;
+    height: ;
+    width: ;
+}
+
 #bio p {
+    display: flex;
+    text-wrap: wrap;
     width: 980px;
     height: 200px;
     padding: 10px;
@@ -131,17 +139,67 @@ h2{
     color: var(--secondary-color);
 }
 
-.feature{
-    border: var(--tertiary-color);
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    color: var(--tertiary-color);
+    border-right-style: 5px;
 }
 
+#rbud > .text-box {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding-top: 15px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 0px;
+    z-index: 999;
+        margin: 0;
+        left: 0;
+        right: -40;        
+        text-align: left;
+        top: 70%; 
+        width: 15%;
+        height: 15%
+}
 
+.text-box {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 22px;
+    padding-right: 0px;
+    z-index: 999;
+        margin: 0;
+        left: 0;
+        right: -40;        
+        text-align: left;
+        top: 65%; 
+        width: 28%;
+        height: 25%
+}
 
-#beach > .image {
-    width: 990px;
+ #runlink > .image {
+    width: 1000px;
     height: 500px;
-    border: var(--tertiary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secondary-color)
+}
+#runlink > a {
+    text-decoration: none;
+}
 
+#runlink:active > a {
+text-decoration: none;
+background-color: transparent;
 }
 
 .image{
@@ -151,8 +209,7 @@ h2{
     margin: 5px;
 }
 
-  
-  .image:hover {
+.image:hover {
     opacity: 1;
   }
 
