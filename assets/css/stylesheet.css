@@ -11,7 +11,6 @@
 }
 
 body {
-    display: grid;
     min-height: 100vh;
     width: 100%;
     max-width: 1500px;
@@ -109,20 +108,18 @@ a:active {
     margin-left: 45px;
 }
 
-.container {
-    height: 230px;
-    width: 1300px;
+section {
     display: flexbox;
     gap: 5px;
 }
 
-.container > div {
+section > div {
     padding: 5px;
 
 }
 
 
-.container > div {
+section > div {
     background-color: var(--primary-color);
     text-align: left;
     padding: 10px;
@@ -130,10 +127,7 @@ a:active {
 }
 
 #about-me {
-height: 200px;
- width: 220px;
  border-right: #ff9400;
- border
 }
 
 #bio {
@@ -146,10 +140,14 @@ height: 200px;
      width: 220px;
     }
 
-
-
 p{
     color: var(--secondary-color);
+}
+
+.leftbar p{
+    height: 200px;
+    width: 220px;
+    font-size: 30px;
 }
 
 .feature {
@@ -172,7 +170,7 @@ p{
 }
 
 
-.leftbar{
+.leftbar {
 border: 5px; 
 border-color: var(--secondary-color);
 }
@@ -226,6 +224,7 @@ h2 {
 }
 
 /*FOOTER STYLING*/
+
 address ul li a {
     display: inline-flex;
     padding: 10px 15px;
@@ -253,5 +252,8 @@ li {
     margin-right: 15px;
 }
 
-
-
+footer a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin-right: 10x;
+    
