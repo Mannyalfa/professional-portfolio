@@ -13,7 +13,7 @@
 body {
     min-height: 100vh;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1300px;
     background-color: var(--primary-color);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
@@ -26,10 +26,11 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     background-image: url("../images/sunset-palms.jpg");
-
     background-size: cover;
     background-attachment: fixed;
     background-position: 70%;
+    z-index: 9999;
+
 }
 
 header h1 {
@@ -109,119 +110,52 @@ a:active {
 }
 
 section {
-    display: flexbox;
-    gap: 5px;
+    margin: 5px auto;
+    padding-bottom: 0px;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-end;
 }
 
-section > div {
-    padding: 5px;
-
+h2{
+    color: var(--secondary-color);
 }
 
-
-section > div {
-    background-color: var(--primary-color);
-    text-align: left;
+#bio p {
+    width: 980px;
+    height: 200px;
     padding: 10px;
-    font-size: 20px;
-}
-
-#about-me {
- border-right: #ff9400;
-}
-
-#bio {
-    height: 200px;
-    width: 1100px;
-}
-
-#work {
-    height: 500px;
-     width: 220px;
-    }
-
-p{
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--secondary-color);
 }
 
-.leftbar p{
-    height: 200px;
-    width: 220px;
-    font-size: 30px;
-}
-
-.feature {
-    border: 5px; 
-    border-color: var(--secondary-color);
-}
-
-.med-pic {
-    border: 5px;
-    border-color: var(--secondary-color);
-}
-
-.med-pic {
-    border-color: var(--secondary-color);
-}
-
-#about-me{
-    height: 200px;
-    width: 220px;
+.feature{
+    border: var(--tertiary-color);
 }
 
 
-.leftbar {
-border: 5px; 
-border-color: var(--secondary-color);
-}
 
-h2 {
-    float:right;
-    font-size: larger;
-    color: var(--secondary-color);
-}
-
-#surf{
-    width: 1100px;
+#beach > .image {
+    width: 990px;
     height: 500px;
+    border: var(--tertiary-color);
+
 }
 
-.image {
+.image{
     opacity: 0.3;
-    display: grid;
-    width: 550px;
-    height: 250px;
-    transition: .5s ease;
-    backface-visibility: hidden;
+    width: 490px;
+    height: 240px;
+    margin: 5px;
 }
 
-.w3-card {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(0%, 0%);
-    -ms-transform: translate(0%, 0%);
-    text-align: center;
-    text-align: center;
-}
-
-.lg-frame:hover .image {
+  
+  .image:hover {
     opacity: 1;
-}
+  }
 
-.lg-frame:hover .w3-card {
-    opacity: 1;
-}
-
-.med-pic:hover .image {
-    opacity: 1;
-}
-
-.med-pic:hover .w3-card {
-    opacity: 1;
-}
 
 /*FOOTER STYLING*/
 
