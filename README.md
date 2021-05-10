@@ -9,12 +9,12 @@ resume page is linked
 
 Contact links are live.
 
-Screebshot: https://github.com/Mannyalfa/professional-portfolio/blob/main/screenshot.jpg
+Screenshot: https://github.com/Mannyalfa/professional-portfolio/blob/main/screenshot.jpg
 
 Reference Page: https://github.com/Mannyalfa/professional-portfolio
 
 Deployed Page: https://Mannyalfa.github.io/professional-portfolio
 
-Note: the gold border around the "Run Buddy" image is because it is lined: all <a> elements
+Note: the gold border around the "Run Buddy" image is because it is linked: all <a> elements
 should function the same way-once I build content and add other links to the placeholder
-images, they will also have the same border when clicked-on.
+images, they will also have the same border when selected.
