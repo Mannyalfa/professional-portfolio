@@ -5,6 +5,9 @@ responsive webpage with vital info for prospective employers
 
 resume page linked
 
+https://github.com/Mannyalfa/professional-portfolio/blob/main/screenshot.jpg
+
+
 "Run Buddy" page is live.
 
 Contact links are live.
